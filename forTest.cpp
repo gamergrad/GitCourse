@@ -6,6 +6,7 @@ int main(){
 std::cout << "Hello world" << std::endl;
 
 std::vector<int> rand_ints;
+std::vector<std::string> reset_string;
 
 sektor j;
 int YES;
@@ -28,7 +29,13 @@ for (auto i : rand_ints)
     std::cout << "====================YES YES YES==============" << std::endl;
 }
 
-std::cout << j.begin <<'\t'<< j.end;
+std::cout << j.begin <<'\t'<< j.end << std::endl;
+
+reset_string.push_back("Here is the strating point for git reset");
+
+for(auto i: reset_string)
+std::cout << i << std::endl;
+
 
 return 0;
 }
