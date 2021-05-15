@@ -36,6 +36,8 @@ reset_string.push_back("Let's test Git reset --soft HEAD");
 reset_string.push_back("Let's test Git reset --mixed HEAD");
 reset_string.push_back("Let's test Git reset --mixed HARD");
 
+std::cout << '\n' << "BOCHKA BASS KOLBASIT SOLO WE ARE GONNA TEST CHECKOUT MOVA" << std::endl;
+
 for(auto i: reset_string)
 std::cout << i << std::endl;
 
