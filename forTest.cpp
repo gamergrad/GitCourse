@@ -33,6 +33,7 @@ std::cout << j.begin <<'\t'<< j.end << std::endl;
 
 reset_string.push_back("Here is the strating point for git reset");
 reset_string.push_back("Let's test Git reset --soft HEAD");
+reset_string.push_back("Let's test Git reset --mixed HEAD");
 
 for(auto i: reset_string)
 std::cout << i << std::endl;
