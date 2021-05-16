@@ -21,3 +21,5 @@ void type_name(const T& value){
     const T* p_value = &value;
     std::cout << '\n' << "Entered value type is " << typeid(*p_value).name() << '\n';
 }
+
+extern void finish_message();
