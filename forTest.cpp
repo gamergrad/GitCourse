@@ -1,5 +1,4 @@
-#include <iostream>
-#include <vector>
+
 #include "header.h"
 
 int main(){
@@ -52,5 +51,9 @@ std::string text2 ="TEST GIT REMOTE SSH CONNECT";
 
 foo(text, 7);
 foo(text2,5);
+
+
+type_name(j);
+
 return 0;
 }
