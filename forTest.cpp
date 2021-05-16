@@ -52,5 +52,7 @@ std::string text2 ="TEST GIT REMOTE SSH CONNECT";
 
 foo(text, 7);
 foo(text2,5);
+
+std::cout << '\n' << "Enter value and press Enter: ";
 return 0;
 }
