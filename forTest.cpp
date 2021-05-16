@@ -42,6 +42,7 @@ for(auto i: reset_string)
 std::cout << i << std::endl;
 
 std::string text ="BIG DADDY TEST CHECKOUT";
+std::string text2 ="LET'S TEST GIT REMOTE SSH CONNECT";
 
 foo(text, 7);
 return 0;
