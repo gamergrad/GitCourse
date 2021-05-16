@@ -41,6 +41,8 @@ std::cout << '\n' << "BOCHKA BASS KOLBASIT SOLO WE ARE GONNA TEST CHECKOUT MOVA"
 for(auto i: reset_string)
 std::cout << i << std::endl;
 
+std::string text ="BIG DADDY TEST CHECKOUT";
 
+foo(text, 7);
 return 0;
 }
