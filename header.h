@@ -2,8 +2,8 @@
 
 #include <string>
 
-struct sektor {
-    int begin, end;
+struct result {
+    int errors, correct;
 };
 
 void foo(const std::string& str, unsigned int n ){

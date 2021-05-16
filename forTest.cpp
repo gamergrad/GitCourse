@@ -3,47 +3,54 @@
 #include "header.h"
 
 int main(){
-std::cout << "Hello world" << std::endl;
+std::cout << "GIT COURSE START" << std::endl;
 
 std::vector<int> rand_ints;
 std::vector<std::string> reset_string;
 
-sektor j;
-int YES;
+result j;
 
-j.begin = 10;
-j.end = 20;
+j.errors = 0;
+j.correct = 0;
 
+std::cout << "LOADING";
 for (size_t i = 0; i < 30; i++)
 {
     rand_ints.push_back(rand()%100);
     
     if(rand_ints[i]%2)
-    std::cout << "==============NO NO NO======================" << std::endl;
+    std::cout << "...";
 }
+std::cout << "COMPLETE!" << std::endl;
+
 
 for (auto i : rand_ints)
 {
     std::cout << i << std::endl;
-    if(i%2)
-    std::cout << "====================YES YES YES==============" << std::endl;
+    if(i%2){
+    std::cout << "Find error. Check log: line"<< (i+rand()%10) << std::endl;
+    ++j.errors;
+    }
+    else
+    ++j.correct;
 }
 
-std::cout << j.begin <<'\t'<< j.end << std::endl;
+std::cout << "RESULT: Erros find " << j.errors <<'\t'<< "Correct files: "<<j.correct << std::endl;
 
 reset_string.push_back("Here is the strating point for git reset");
 reset_string.push_back("Let's test Git reset --soft HEAD");
 reset_string.push_back("Let's test Git reset --mixed HEAD");
 reset_string.push_back("Let's test Git reset --mixed HARD");
 
-std::cout << '\n' << "BOCHKA BASS KOLBASIT SOLO WE ARE GONNA TEST CHECKOUT MOVA" << std::endl;
+std::cout << '\n' << "TESTING CHECKOUT" << std::endl;
 
 for(auto i: reset_string)
 std::cout << i << std::endl;
 
-std::string text ="BIG DADDY TEST CHECKOUT";
-std::string text2 ="LET'S TEST GIT REMOTE SSH CONNECT";
+std::string text ="GIT CHECKOUT TEST OK";
+std::string text2 ="TEST GIT REMOTE SSH CONNECT";
 
 foo(text, 7);
+foo(text2,5);
 return 0;
 }
