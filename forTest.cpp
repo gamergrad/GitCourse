@@ -1,5 +1,3 @@
-#include <iostream>
-#include <vector>
 #include "header.h"
 
 int main(){
@@ -54,5 +52,10 @@ foo(text, 7);
 foo(text2,5);
 
 std::cout << '\n' << "Enter value and press Enter: ";
+
+type_name(j);
+
+//finish_message();
+
 return 0;
 }
